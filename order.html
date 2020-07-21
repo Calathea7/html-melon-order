@@ -32,12 +32,15 @@
     
     <h2>Order Form</h2>
     <form>
+    <div>
         What is your name?
         <input type="text" name="name">
-
+    </div>
+    <div>
         Who are we sending this to?
         <input type="text" name ="recipient">
-
+    </div>
+    <div>
         Choose a melon
         <select name="melon">
 
@@ -45,26 +48,30 @@
             <option value="canteloupe">Canteloupe</option>
             <option value="honeydew">Honeydew</option>
         </select>
-        
+    </div>
+    <div>
         When should we deliver?
-            <input type="radio" name="time" value="am">
-            <label>Morning</label>
+            <input type="radio" name="time" value="am" id="morning">
+            <label for="morning">Morning</label>
             
-            <input type="radio" name="time" value="pm">
-            <label>Evening</label>
+            <input type="radio" name="time" value="pm" id="evening">
+            <label for="evening">Evening</label>
             
-            <input type="radio" name="time" value="any">
-            <label>Any time</label>
-
+            <input type="radio" name="time" value="any" id="anytime">
+            <label for="anytime">Any time</label>
+    </div>
+    <div>
         Enter your message:
             <input type="text" name="message">
-
+    </div>
+    <div>
         Subscribe to our newsletter
-            <input type="checkbox" name="subscribe" value="yes">
-            <label>Yes</label>
-
+            <input type="checkbox" name="subscribe" value="yes" id="yes">
+            <label for="yes">Yes</label>
+    </div>
+    <div>
         <input type="submit">
-        
+    </div>
     </form>
 </body>
 </html>
